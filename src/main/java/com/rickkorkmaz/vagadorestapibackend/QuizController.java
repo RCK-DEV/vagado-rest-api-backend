@@ -1,10 +1,12 @@
 package com.rickkorkmaz.vagadorestapibackend;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 
+@CrossOrigin(origins = { "http://localhost:8081", "https://vagado-vue-frontend.onrender.com"})
 @RestController
 public class QuizController {
 
